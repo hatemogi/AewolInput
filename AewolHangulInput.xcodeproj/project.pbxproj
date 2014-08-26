@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		540E010E19AC6FF8008538D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E010D19AC6FF8008538D3 /* main.m */; };
+		540E011119AC6FF8008538D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E011019AC6FF8008538D3 /* AppDelegate.m */; };
+		540E011319AC6FF8008538D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540E011219AC6FF8008538D3 /* Images.xcassets */; };
+		540E011619AC6FF8008538D3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540E011419AC6FF8008538D3 /* MainMenu.xib */; };
+		540E012219AC6FF9008538D3 /* AewolHangulInputTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E012119AC6FF9008538D3 /* AewolHangulInputTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		540E011C19AC6FF9008538D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 540E010019AC6FF8008538D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 540E010719AC6FF8008538D3;
+			remoteInfo = AewolHangulInput;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		540E010819AC6FF8008538D3 /* AewolHangulInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AewolHangulInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		540E010C19AC6FF8008538D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540E010D19AC6FF8008538D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		540E010F19AC6FF8008538D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		540E011019AC6FF8008538D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		540E011219AC6FF8008538D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		540E011519AC6FF8008538D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		540E011B19AC6FF9008538D3 /* AewolHangulInputTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AewolHangulInputTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		540E012019AC6FF9008538D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540E012119AC6FF9008538D3 /* AewolHangulInputTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AewolHangulInputTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		540E010519AC6FF8008538D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540E011819AC6FF9008538D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		540E00FF19AC6FF8008538D3 = {
+			isa = PBXGroup;
+			children = (
+				540E010A19AC6FF8008538D3 /* AewolHangulInput */,
+				540E011E19AC6FF9008538D3 /* AewolHangulInputTests */,
+				540E010919AC6FF8008538D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		540E010919AC6FF8008538D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				540E010819AC6FF8008538D3 /* AewolHangulInput.app */,
+				540E011B19AC6FF9008538D3 /* AewolHangulInputTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		540E010A19AC6FF8008538D3 /* AewolHangulInput */ = {
+			isa = PBXGroup;
+			children = (
+				540E010F19AC6FF8008538D3 /* AppDelegate.h */,
+				540E011019AC6FF8008538D3 /* AppDelegate.m */,
+				540E011219AC6FF8008538D3 /* Images.xcassets */,
+				540E011419AC6FF8008538D3 /* MainMenu.xib */,
+				540E010B19AC6FF8008538D3 /* Supporting Files */,
+			);
+			path = AewolHangulInput;
+			sourceTree = "<group>";
+		};
+		540E010B19AC6FF8008538D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				540E010C19AC6FF8008538D3 /* Info.plist */,
+				540E010D19AC6FF8008538D3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		540E011E19AC6FF9008538D3 /* AewolHangulInputTests */ = {
+			isa = PBXGroup;
+			children = (
+				540E012119AC6FF9008538D3 /* AewolHangulInputTests.m */,
+				540E011F19AC6FF9008538D3 /* Supporting Files */,
+			);
+			path = AewolHangulInputTests;
+			sourceTree = "<group>";
+		};
+		540E011F19AC6FF9008538D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				540E012019AC6FF9008538D3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		540E010719AC6FF8008538D3 /* AewolHangulInput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540E012519AC6FF9008538D3 /* Build configuration list for PBXNativeTarget "AewolHangulInput" */;
+			buildPhases = (
+				540E010419AC6FF8008538D3 /* Sources */,
+				540E010519AC6FF8008538D3 /* Frameworks */,
+				540E010619AC6FF8008538D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AewolHangulInput;
+			productName = AewolHangulInput;
+			productReference = 540E010819AC6FF8008538D3 /* AewolHangulInput.app */;
+			productType = "com.apple.product-type.application";
+		};
+		540E011A19AC6FF9008538D3 /* AewolHangulInputTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540E012819AC6FF9008538D3 /* Build configuration list for PBXNativeTarget "AewolHangulInputTests" */;
+			buildPhases = (
+				540E011719AC6FF9008538D3 /* Sources */,
+				540E011819AC6FF9008538D3 /* Frameworks */,
+				540E011919AC6FF9008538D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				540E011D19AC6FF9008538D3 /* PBXTargetDependency */,
+			);
+			name = AewolHangulInputTests;
+			productName = AewolHangulInputTests;
+			productReference = 540E011B19AC6FF9008538D3 /* AewolHangulInputTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		540E010019AC6FF8008538D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = aewolstory;
+				TargetAttributes = {
+					540E010719AC6FF8008538D3 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					540E011A19AC6FF9008538D3 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 540E010719AC6FF8008538D3;
+					};
+				};
+			};
+			buildConfigurationList = 540E010319AC6FF8008538D3 /* Build configuration list for PBXProject "AewolHangulInput" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 540E00FF19AC6FF8008538D3;
+			productRefGroup = 540E010919AC6FF8008538D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				540E010719AC6FF8008538D3 /* AewolHangulInput */,
+				540E011A19AC6FF9008538D3 /* AewolHangulInputTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		540E010619AC6FF8008538D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540E011319AC6FF8008538D3 /* Images.xcassets in Resources */,
+				540E011619AC6FF8008538D3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540E011919AC6FF9008538D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		540E010419AC6FF8008538D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540E011119AC6FF8008538D3 /* AppDelegate.m in Sources */,
+				540E010E19AC6FF8008538D3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540E011719AC6FF9008538D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540E012219AC6FF9008538D3 /* AewolHangulInputTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		540E011D19AC6FF9008538D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 540E010719AC6FF8008538D3 /* AewolHangulInput */;
+			targetProxy = 540E011C19AC6FF9008538D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		540E011419AC6FF8008538D3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540E011519AC6FF8008538D3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		540E012319AC6FF9008538D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		540E012419AC6FF9008538D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		540E012619AC6FF9008538D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AewolHangulInput/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		540E012719AC6FF9008538D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AewolHangulInput/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		540E012919AC6FF9008538D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AewolHangulInputTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AewolHangulInput.app/Contents/MacOS/AewolHangulInput";
+			};
+			name = Debug;
+		};
+		540E012A19AC6FF9008538D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AewolHangulInputTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AewolHangulInput.app/Contents/MacOS/AewolHangulInput";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		540E010319AC6FF8008538D3 /* Build configuration list for PBXProject "AewolHangulInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540E012319AC6FF9008538D3 /* Debug */,
+				540E012419AC6FF9008538D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540E012519AC6FF9008538D3 /* Build configuration list for PBXNativeTarget "AewolHangulInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540E012619AC6FF9008538D3 /* Debug */,
+				540E012719AC6FF9008538D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		540E012819AC6FF9008538D3 /* Build configuration list for PBXNativeTarget "AewolHangulInputTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540E012919AC6FF9008538D3 /* Debug */,
+				540E012A19AC6FF9008538D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 540E010019AC6FF8008538D3 /* Project object */;
+}
