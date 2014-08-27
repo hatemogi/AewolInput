@@ -12,6 +12,11 @@
 		540E011319AC6FF8008538D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540E011219AC6FF8008538D3 /* Images.xcassets */; };
 		540E011619AC6FF8008538D3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540E011419AC6FF8008538D3 /* MainMenu.xib */; };
 		540E012219AC6FF9008538D3 /* AewolHangulInputTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E012119AC6FF9008538D3 /* AewolHangulInputTests.m */; };
+		540E012F19AC7084008538D3 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540E012E19AC7084008538D3 /* InputMethodKit.framework */; };
+		540E013219AC70C8008538D3 /* AewolInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E013119AC70C8008538D3 /* AewolInputController.m */; };
+		540E013319AC70C8008538D3 /* AewolInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E013119AC70C8008538D3 /* AewolInputController.m */; };
+		540E013619AC73EE008538D3 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540E012E19AC7084008538D3 /* InputMethodKit.framework */; };
+		540E013A19AD7526008538D3 /* libhangul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540E013919AD7526008538D3 /* libhangul.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,19 +27,31 @@
 			remoteGlobalIDString = 540E010719AC6FF8008538D3;
 			remoteInfo = AewolHangulInput;
 		};
+		540E013C19ADAEC8008538D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 540E010019AC6FF8008538D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 540E010719AC6FF8008538D3;
+			remoteInfo = AewolInputMethod;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		540E010819AC6FF8008538D3 /* AewolHangulInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AewolHangulInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		540E010819AC6FF8008538D3 /* AewolInputMethod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AewolInputMethod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		540E010C19AC6FF8008538D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		540E010D19AC6FF8008538D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		540E010F19AC6FF8008538D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		540E011019AC6FF8008538D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		540E011219AC6FF8008538D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		540E011519AC6FF8008538D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		540E011B19AC6FF9008538D3 /* AewolHangulInputTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AewolHangulInputTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		540E011B19AC6FF9008538D3 /* AewolInputMethodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AewolInputMethodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		540E012019AC6FF9008538D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		540E012119AC6FF9008538D3 /* AewolHangulInputTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AewolHangulInputTests.m; sourceTree = "<group>"; };
+		540E012E19AC7084008538D3 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = System/Library/Frameworks/InputMethodKit.framework; sourceTree = SDKROOT; };
+		540E013019AC70C8008538D3 /* AewolInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AewolInputController.h; sourceTree = "<group>"; };
+		540E013119AC70C8008538D3 /* AewolInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AewolInputController.m; sourceTree = "<group>"; };
+		540E013919AD7526008538D3 /* libhangul.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhangul.a; sourceTree = "<group>"; };
+		540E013B19AD7578008538D3 /* hangul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hangul.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				540E012F19AC7084008538D3 /* InputMethodKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				540E013A19AD7526008538D3 /* libhangul.a in Frameworks */,
+				540E013619AC73EE008538D3 /* InputMethodKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +78,11 @@
 		540E00FF19AC6FF8008538D3 = {
 			isa = PBXGroup;
 			children = (
-				540E010A19AC6FF8008538D3 /* AewolHangulInput */,
-				540E011E19AC6FF9008538D3 /* AewolHangulInputTests */,
+				540E013B19AD7578008538D3 /* hangul.h */,
+				540E013919AD7526008538D3 /* libhangul.a */,
+				540E012E19AC7084008538D3 /* InputMethodKit.framework */,
+				540E010A19AC6FF8008538D3 /* AewolInputMethod */,
+				540E011E19AC6FF9008538D3 /* AewolInputMethodTests */,
 				540E010919AC6FF8008538D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,13 +90,13 @@
 		540E010919AC6FF8008538D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				540E010819AC6FF8008538D3 /* AewolHangulInput.app */,
-				540E011B19AC6FF9008538D3 /* AewolHangulInputTests.xctest */,
+				540E010819AC6FF8008538D3 /* AewolInputMethod.app */,
+				540E011B19AC6FF9008538D3 /* AewolInputMethodTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		540E010A19AC6FF8008538D3 /* AewolHangulInput */ = {
+		540E010A19AC6FF8008538D3 /* AewolInputMethod */ = {
 			isa = PBXGroup;
 			children = (
 				540E010F19AC6FF8008538D3 /* AppDelegate.h */,
@@ -81,8 +104,10 @@
 				540E011219AC6FF8008538D3 /* Images.xcassets */,
 				540E011419AC6FF8008538D3 /* MainMenu.xib */,
 				540E010B19AC6FF8008538D3 /* Supporting Files */,
+				540E013019AC70C8008538D3 /* AewolInputController.h */,
+				540E013119AC70C8008538D3 /* AewolInputController.m */,
 			);
-			path = AewolHangulInput;
+			path = AewolInputMethod;
 			sourceTree = "<group>";
 		};
 		540E010B19AC6FF8008538D3 /* Supporting Files */ = {
@@ -94,13 +119,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		540E011E19AC6FF9008538D3 /* AewolHangulInputTests */ = {
+		540E011E19AC6FF9008538D3 /* AewolInputMethodTests */ = {
 			isa = PBXGroup;
 			children = (
 				540E012119AC6FF9008538D3 /* AewolHangulInputTests.m */,
 				540E011F19AC6FF9008538D3 /* Supporting Files */,
 			);
-			path = AewolHangulInputTests;
+			path = AewolInputMethodTests;
 			sourceTree = "<group>";
 		};
 		540E011F19AC6FF9008538D3 /* Supporting Files */ = {
@@ -114,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		540E010719AC6FF8008538D3 /* AewolHangulInput */ = {
+		540E010719AC6FF8008538D3 /* AewolInputMethod */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 540E012519AC6FF9008538D3 /* Build configuration list for PBXNativeTarget "AewolHangulInput" */;
+			buildConfigurationList = 540E012519AC6FF9008538D3 /* Build configuration list for PBXNativeTarget "AewolInputMethod" */;
 			buildPhases = (
 				540E010419AC6FF8008538D3 /* Sources */,
 				540E010519AC6FF8008538D3 /* Frameworks */,
@@ -126,14 +151,14 @@
 			);
 			dependencies = (
 			);
-			name = AewolHangulInput;
+			name = AewolInputMethod;
 			productName = AewolHangulInput;
-			productReference = 540E010819AC6FF8008538D3 /* AewolHangulInput.app */;
+			productReference = 540E010819AC6FF8008538D3 /* AewolInputMethod.app */;
 			productType = "com.apple.product-type.application";
 		};
-		540E011A19AC6FF9008538D3 /* AewolHangulInputTests */ = {
+		540E011A19AC6FF9008538D3 /* AewolInputMethodTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 540E012819AC6FF9008538D3 /* Build configuration list for PBXNativeTarget "AewolHangulInputTests" */;
+			buildConfigurationList = 540E012819AC6FF9008538D3 /* Build configuration list for PBXNativeTarget "AewolInputMethodTests" */;
 			buildPhases = (
 				540E011719AC6FF9008538D3 /* Sources */,
 				540E011819AC6FF9008538D3 /* Frameworks */,
@@ -143,10 +168,11 @@
 			);
 			dependencies = (
 				540E011D19AC6FF9008538D3 /* PBXTargetDependency */,
+				540E013D19ADAEC8008538D3 /* PBXTargetDependency */,
 			);
-			name = AewolHangulInputTests;
+			name = AewolInputMethodTests;
 			productName = AewolHangulInputTests;
-			productReference = 540E011B19AC6FF9008538D3 /* AewolHangulInputTests.xctest */;
+			productReference = 540E011B19AC6FF9008538D3 /* AewolInputMethodTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -167,7 +193,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 540E010319AC6FF8008538D3 /* Build configuration list for PBXProject "AewolHangulInput" */;
+			buildConfigurationList = 540E010319AC6FF8008538D3 /* Build configuration list for PBXProject "AewolInputMethod" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -180,8 +206,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				540E010719AC6FF8008538D3 /* AewolHangulInput */,
-				540E011A19AC6FF9008538D3 /* AewolHangulInputTests */,
+				540E010719AC6FF8008538D3 /* AewolInputMethod */,
+				540E011A19AC6FF9008538D3 /* AewolInputMethodTests */,
 			);
 		};
 /* End PBXProject section */
@@ -211,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				540E011119AC6FF8008538D3 /* AppDelegate.m in Sources */,
+				540E013219AC70C8008538D3 /* AewolInputController.m in Sources */,
 				540E010E19AC6FF8008538D3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				540E012219AC6FF9008538D3 /* AewolHangulInputTests.m in Sources */,
+				540E013319AC70C8008538D3 /* AewolInputController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,8 +256,13 @@
 /* Begin PBXTargetDependency section */
 		540E011D19AC6FF9008538D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 540E010719AC6FF8008538D3 /* AewolHangulInput */;
+			target = 540E010719AC6FF8008538D3 /* AewolInputMethod */;
 			targetProxy = 540E011C19AC6FF9008538D3 /* PBXContainerItemProxy */;
+		};
+		540E013D19ADAEC8008538D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 540E010719AC6FF8008538D3 /* AewolInputMethod */;
+			targetProxy = 540E013C19ADAEC8008538D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -326,9 +359,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = AewolHangulInput/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/AewolInputMethod/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AewolInputMethod;
 			};
 			name = Debug;
 		};
@@ -337,9 +374,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = AewolHangulInput/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/AewolInputMethod/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AewolInputMethod;
 			};
 			name = Release;
 		};
@@ -351,15 +392,20 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = AewolHangulInputTests/Info.plist;
+				INFOPLIST_FILE = AewolInputMethodTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AewolHangulInput.app/Contents/MacOS/AewolHangulInput";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = AewolInputMethodTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AewolInputMethod.app/Contents/MacOS/AewolInputMethod";
 			};
 			name = Debug;
 		};
@@ -371,18 +417,23 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = AewolHangulInputTests/Info.plist;
+				INFOPLIST_FILE = AewolInputMethodTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AewolHangulInput.app/Contents/MacOS/AewolHangulInput";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = AewolInputMethodTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AewolInputMethod.app/Contents/MacOS/AewolInputMethod";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		540E010319AC6FF8008538D3 /* Build configuration list for PBXProject "AewolHangulInput" */ = {
+		540E010319AC6FF8008538D3 /* Build configuration list for PBXProject "AewolInputMethod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				540E012319AC6FF9008538D3 /* Debug */,
@@ -391,21 +442,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		540E012519AC6FF9008538D3 /* Build configuration list for PBXNativeTarget "AewolHangulInput" */ = {
+		540E012519AC6FF9008538D3 /* Build configuration list for PBXNativeTarget "AewolInputMethod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				540E012619AC6FF9008538D3 /* Debug */,
 				540E012719AC6FF9008538D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		540E012819AC6FF9008538D3 /* Build configuration list for PBXNativeTarget "AewolHangulInputTests" */ = {
+		540E012819AC6FF9008538D3 /* Build configuration list for PBXNativeTarget "AewolInputMethodTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				540E012919AC6FF9008538D3 /* Debug */,
 				540E012A19AC6FF9008538D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

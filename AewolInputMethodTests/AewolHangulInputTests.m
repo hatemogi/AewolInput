@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
+#import "hangul.h"
+#import <wchar.h>
 
 @interface AewolHangulInputTests : XCTestCase
 
@@ -25,9 +27,20 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testHangulInputContext {
+    HangulInputContext* hic = hangul_ic_new("2");
+    hangul_ic_process(hic, 'r');
+    hangul_ic_process(hic, 'l');
+    hangul_ic_process(hic, 'a');
+    hangul_ic_process(hic, 'a');
+    const ucschar *commit = hangul_ic_get_commit_string(hic);
+    const ucschar *preedit = hangul_ic_get_preedit_string(hic);
+    NSString *c = [NSString stringWithCharacters:(unichar *)commit length:wcslen((const wchar_t *)commit)];
+    NSString *p = [NSString stringWithCharacters:(unichar *)preedit length:wcslen((const wchar_t *)preedit)];
+    NSLog(@"---------------------[%@, %@]-----------------", c, p);
+    XCTAssertEqualObjects(c, @"김");
+    XCTAssertEqualObjects(p, @"ㅁ");
+    hangul_ic_delete(hic);
 }
 
 - (void)testPerformanceExample {
