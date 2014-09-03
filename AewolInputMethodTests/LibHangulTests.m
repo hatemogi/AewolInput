@@ -6,7 +6,6 @@
 //  Copyright (c) 2014년 aewolstory. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
 #import "hangul.h"
 #import <wchar.h>
