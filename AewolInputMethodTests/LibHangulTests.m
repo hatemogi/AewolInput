@@ -11,12 +11,12 @@
 #import "hangul.h"
 #import <wchar.h>
 
-@interface AewolHangulInputTests : XCTestCase {
+@interface LibHangulTests : XCTestCase {
     HangulInputContext *ctx;
 }
 @end
 
-@implementation AewolHangulInputTests
+@implementation LibHangulTests
 
 - (void)setUp {
     [super setUp];
@@ -33,9 +33,12 @@
     return [NSString stringWithCharacters:(unichar *)s length: wcslen((const wchar_t *)s)];
 }
 
-- (void)assertPreedit:(NSString *)s
-{
-    XCTAssertEqualObjects(s, [self stringFromUCS4:hangul_ic_get_preedit_string(ctx)]);
+- (NSString *)preeditString {
+    return [self stringFromUCS4:hangul_ic_get_preedit_string(ctx)];
+}
+
+- (NSString *)commitString {
+    return [self stringFromUCS4:hangul_ic_get_commit_string(ctx)];
 }
 
 - (void)testHangulInputContext {
@@ -46,21 +49,16 @@
     hangul_ic_process(ctx, 'l');
     hangul_ic_process(ctx, 'a');
     hangul_ic_process(ctx, 'a');
-    NSString *c = [self stringFromUCS4:hangul_ic_get_commit_string(ctx)];
-    NSString *p = [self stringFromUCS4:hangul_ic_get_preedit_string(ctx)];
-    NSLog(@"[%@, %@]", c, p);
-    XCTAssertEqualObjects(c, @"김");
-    [self assertPreedit:@"ㅁ"];
+    XCTAssertEqualObjects(@"김", [self commitString]);
+    XCTAssertEqualObjects(@"ㅁ", [self preeditString]);
     XCTAssert(hangul_ic_backspace(ctx));
     XCTAssertFalse(hangul_ic_process(ctx, ' '));
     hangul_ic_process(ctx, 'e');
     hangul_ic_process(ctx, 'o');
     XCTAssertFalse(hangul_ic_process(ctx, ' '));
-    hangul_ic_process(ctx, '1');
 
-    c = [self stringFromUCS4:hangul_ic_get_commit_string(ctx)];
-    p = [self stringFromUCS4:hangul_ic_get_preedit_string(ctx)];
-    NSLog(@"[%@, %@]", c, p);
+    hangul_ic_process(ctx, '1');
+    XCTAssertEqualObjects(@"1", [self commitString]);
 }
 
 - (void)testBackspace {
@@ -68,13 +66,13 @@
     hangul_ic_process(ctx, 'r');
     hangul_ic_process(ctx, 'l');
     hangul_ic_process(ctx, 'a');
-    [self assertPreedit:@"김"];
+    XCTAssertEqualObjects(@"김", [self preeditString]);
     XCTAssert(hangul_ic_backspace(ctx));
-    [self assertPreedit:@"기"];
+    XCTAssertEqualObjects(@"기", [self preeditString]);
     XCTAssert(hangul_ic_backspace(ctx));
-    [self assertPreedit:@"ㄱ"];
+    XCTAssertEqualObjects(@"ㄱ", [self preeditString]);
     XCTAssert(hangul_ic_backspace(ctx));
-    [self assertPreedit:@""];
+    XCTAssertEqualObjects(@"", [self preeditString]);
     XCTAssertFalse(hangul_ic_backspace(ctx));
 }
 

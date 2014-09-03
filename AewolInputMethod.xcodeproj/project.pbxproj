@@ -11,7 +11,7 @@
 		540E011119AC6FF8008538D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E011019AC6FF8008538D3 /* AppDelegate.m */; };
 		540E011319AC6FF8008538D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540E011219AC6FF8008538D3 /* Images.xcassets */; };
 		540E011619AC6FF8008538D3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540E011419AC6FF8008538D3 /* MainMenu.xib */; };
-		540E012219AC6FF9008538D3 /* AewolHangulInputTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E012119AC6FF9008538D3 /* AewolHangulInputTests.m */; };
+		540E012219AC6FF9008538D3 /* LibHangulTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E012119AC6FF9008538D3 /* LibHangulTests.m */; };
 		540E012F19AC7084008538D3 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540E012E19AC7084008538D3 /* InputMethodKit.framework */; };
 		540E013219AC70C8008538D3 /* AewolInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E013119AC70C8008538D3 /* AewolInputController.m */; };
 		540E013319AC70C8008538D3 /* AewolInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E013119AC70C8008538D3 /* AewolInputController.m */; };
@@ -56,7 +56,7 @@
 		540E011519AC6FF8008538D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		540E011B19AC6FF9008538D3 /* AewolInputMethodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AewolInputMethodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		540E012019AC6FF9008538D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		540E012119AC6FF9008538D3 /* AewolHangulInputTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AewolHangulInputTests.m; sourceTree = "<group>"; };
+		540E012119AC6FF9008538D3 /* LibHangulTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibHangulTests.m; sourceTree = "<group>"; };
 		540E012E19AC7084008538D3 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = System/Library/Frameworks/InputMethodKit.framework; sourceTree = SDKROOT; };
 		540E013019AC70C8008538D3 /* AewolInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AewolInputController.h; sourceTree = "<group>"; };
 		540E013119AC70C8008538D3 /* AewolInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AewolInputController.m; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		540E011E19AC6FF9008538D3 /* AewolInputMethodTests */ = {
 			isa = PBXGroup;
 			children = (
-				540E012119AC6FF9008538D3 /* AewolHangulInputTests.m */,
+				540E012119AC6FF9008538D3 /* LibHangulTests.m */,
 				540E011F19AC6FF9008538D3 /* Supporting Files */,
 			);
 			path = AewolInputMethodTests;
@@ -291,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				540E012219AC6FF9008538D3 /* AewolHangulInputTests.m in Sources */,
+				540E012219AC6FF9008538D3 /* LibHangulTests.m in Sources */,
 				540E013319AC70C8008538D3 /* AewolInputController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
