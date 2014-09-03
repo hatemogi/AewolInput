@@ -55,8 +55,10 @@
 #define AEWOL_DVORAK       ""
 #define AEWOL_DVORAK_SHIFT ""
 
-- (BOOL)inputText:(NSString*)string key:(NSInteger)keyCode modifiers:(NSUInteger)flags client:(id)sender
-{
+- (BOOL)handleEvent:(NSEvent *)event client:(id)sender {
+    NSInteger keyCode = event.keyCode;
+    NSUInteger flags = event.modifierFlags;
+
     static char *keymaps[] = {AEWOL_QWERTY, AEWOL_QWERTY_SHIFT};
     static int MAX_KEYCODE = strlen(AEWOL_QWERTY) - 1;
 
@@ -69,6 +71,7 @@
         [self flushPreedit:sender];
         return NO;
     }
+    // NSLog(@"flags=%ld, fn_or_shift=%d, keycode=%ld", flags, fn_or_shift, keyCode);
 
     int shift = ((flags & NSShiftKeyMask) > 0) ? 1 : 0;
     char ascii = keymaps[shift][keyCode];
@@ -90,7 +93,6 @@
             if (ascii == '\t') {
                 return NO;
             } else {
-                NSLog(@"inserting %@ for %c (%ld)", ascii_s, ascii, keyCode);
                 [sender insertText:ascii_s replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
                 return YES;
             }
@@ -105,6 +107,7 @@
 {
     NSString *newMode = (NSString *)value;
     NSLog(@"New mode key = %@", newMode);
+    if (ctx) hangul_ic_delete(ctx);
     ctx = hangul_ic_new("2");
 }
 

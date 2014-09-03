@@ -13,7 +13,7 @@
     HangulInputContext *ctx;
 }
 
-- (BOOL)inputText:(NSString*)string key:(NSInteger)keyCode modifiers:(NSUInteger)flags client:(id)sender;
+- (BOOL)handleEvent:(NSEvent *)event client:(id)sender;
 
 @end
 
