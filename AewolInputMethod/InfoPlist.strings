@@ -5,3 +5,8 @@
   Created by Daehyun Kim on 2014. 8. 27..
   Copyright (c) 2014년 aewolstory. All rights reserved.
 */
+
+com.aewolstory.inputmethod.han2 = "애월2벌식";
+
+CFBundleName = "애월입력기";
+CFBundleDisplayName = "애월입력기";

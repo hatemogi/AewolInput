@@ -7,7 +7,13 @@
 //
 
 #import <InputMethodKit/InputMethodKit.h>
+#import "hangul.h"
 
-@interface AewolInputController : IMKInputController
+@interface AewolInputController : IMKInputController {
+    HangulInputContext *ctx;
+}
+
+- (BOOL)inputText:(NSString*)string key:(NSInteger)keyCode modifiers:(NSUInteger)flags client:(id)sender;
 
 @end
+

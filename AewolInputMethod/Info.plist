@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>ko_KR</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>Gureum.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.aewolstory.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>com.aewolstory.inputmethod.Aewol</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -26,6 +26,8 @@
 	<string>AewolInput_Connection</string>
 	<key>InputMethodServerControllerClass</key>
 	<string>AewolInputController</string>
+	<key>InputMethodServerDelegateClass</key>
+	<string>AewolInputController</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.utilities</string>
 	<key>LSBackgroundOnly</key>
@@ -33,7 +35,7 @@
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2014년 aewolstory. All rights reserved.</string>
+	<string>Copyright © 2014년 애월스토리. All rights reserved.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
@@ -41,7 +43,41 @@
 	<key>tsInputMethodCharacterRepertoireKey</key>
 	<array>
 		<string>Latn</string>
-		<string>Kore</string>
 	</array>
+	<key>tsInputMethodIconFileKey</key>
+	<string>han.png</string>
+	<key>ComponentInputModeDict</key>
+	<dict>
+		<key>tsInputModeListKey</key>
+		<dict>
+			<key>com.aewolstory.inputmethod.qwerty</key>
+			<dict>
+				<key>tsInputModeAlternateMenuIconFileKey</key>
+				<string>han2.png</string>
+				<key>tsInputModeDefaultStateKey</key>
+				<true/>
+				<key>TISIntendedLanguage</key>
+				<string>en</string>
+				<key>tsInputModeIsVisibleKey</key>
+				<true/>
+				<key>tsInputModeKeyEquivalentKey</key>
+				<string>D</string>
+				<key>tsInputModeKeyEquivalentModifiersKey</key>
+				<integer>4608</integer>
+				<key>tsInputModeMenuIconFileKey</key>
+				<string>han2.png</string>
+				<key>tsInputModePaletteIconFileKey</key>
+				<string>han2.png</string>
+				<key>tsInputModePrimaryInScriptKey</key>
+				<true/>
+				<key>tsInputModeScriptKey</key>
+				<string>smRoman</string>
+			</dict>
+		</dict>
+		<key>tsVisibleInputModeOrderedArrayKey</key>
+		<array>
+			<string>com.aewolstory.inputmethod.han2</string>
+		</array>
+	</dict>
 </dict>
 </plist>

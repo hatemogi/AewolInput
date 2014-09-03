@@ -17,6 +17,16 @@
 		540E013319AC70C8008538D3 /* AewolInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E013119AC70C8008538D3 /* AewolInputController.m */; };
 		540E013619AC73EE008538D3 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540E012E19AC7084008538D3 /* InputMethodKit.framework */; };
 		540E013A19AD7526008538D3 /* libhangul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540E013919AD7526008538D3 /* libhangul.a */; };
+		5439104D19AE1BC200766375 /* libhangul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540E013919AD7526008538D3 /* libhangul.a */; };
+		547B333B19ADBD270058731C /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 547B331819ADBD270058731C /* COPYING */; };
+		547B333C19ADBD270058731C /* dvorak.png in Resources */ = {isa = PBXBuildFile; fileRef = 547B331919ADBD270058731C /* dvorak.png */; };
+		547B333D19ADBD270058731C /* dvorak@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 547B331A19ADBD270058731C /* dvorak@2x.png */; };
+		547B334019ADBD270058731C /* Gureum.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 547B331D19ADBD270058731C /* Gureum.iconset */; };
+		547B334919ADBD270058731C /* han2.png in Resources */ = {isa = PBXBuildFile; fileRef = 547B332719ADBD270058731C /* han2.png */; };
+		547B334A19ADBD270058731C /* han2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 547B332819ADBD270058731C /* han2@2x.png */; };
+		547B335719ADBD270058731C /* qwerty.png in Resources */ = {isa = PBXBuildFile; fileRef = 547B333619ADBD270058731C /* qwerty.png */; };
+		547B335819ADBD270058731C /* qwerty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 547B333719ADBD270058731C /* qwerty@2x.png */; };
+		547B335A19ADBF1D0058731C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 547B335919ADBF1D0058731C /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +62,15 @@
 		540E013119AC70C8008538D3 /* AewolInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AewolInputController.m; sourceTree = "<group>"; };
 		540E013919AD7526008538D3 /* libhangul.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhangul.a; sourceTree = "<group>"; };
 		540E013B19AD7578008538D3 /* hangul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hangul.h; sourceTree = "<group>"; };
+		547B331819ADBD270058731C /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		547B331919ADBD270058731C /* dvorak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dvorak.png; sourceTree = "<group>"; };
+		547B331A19ADBD270058731C /* dvorak@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvorak@2x.png"; sourceTree = "<group>"; };
+		547B331D19ADBD270058731C /* Gureum.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Gureum.iconset; sourceTree = "<group>"; };
+		547B332719ADBD270058731C /* han2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = han2.png; sourceTree = "<group>"; };
+		547B332819ADBD270058731C /* han2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "han2@2x.png"; sourceTree = "<group>"; };
+		547B333619ADBD270058731C /* qwerty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qwerty.png; sourceTree = "<group>"; };
+		547B333719ADBD270058731C /* qwerty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qwerty@2x.png"; sourceTree = "<group>"; };
+		547B335919ADBF1D0058731C /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5439104D19AE1BC200766375 /* libhangul.a in Frameworks */,
 				540E012F19AC7084008538D3 /* InputMethodKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,10 +100,10 @@
 			children = (
 				540E013B19AD7578008538D3 /* hangul.h */,
 				540E013919AD7526008538D3 /* libhangul.a */,
-				540E012E19AC7084008538D3 /* InputMethodKit.framework */,
 				540E010A19AC6FF8008538D3 /* AewolInputMethod */,
 				540E011E19AC6FF9008538D3 /* AewolInputMethodTests */,
 				540E010919AC6FF8008538D3 /* Products */,
+				540E012E19AC7084008538D3 /* InputMethodKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +119,7 @@
 		540E010A19AC6FF8008538D3 /* AewolInputMethod */ = {
 			isa = PBXGroup;
 			children = (
+				547B331419ADBD270058731C /* Icons */,
 				540E010F19AC6FF8008538D3 /* AppDelegate.h */,
 				540E011019AC6FF8008538D3 /* AppDelegate.m */,
 				540E011219AC6FF8008538D3 /* Images.xcassets */,
@@ -114,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				540E010C19AC6FF8008538D3 /* Info.plist */,
+				547B335919ADBF1D0058731C /* InfoPlist.strings */,
 				540E010D19AC6FF8008538D3 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -134,6 +156,21 @@
 				540E012019AC6FF9008538D3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		547B331419ADBD270058731C /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				547B331819ADBD270058731C /* COPYING */,
+				547B331919ADBD270058731C /* dvorak.png */,
+				547B331A19ADBD270058731C /* dvorak@2x.png */,
+				547B331D19ADBD270058731C /* Gureum.iconset */,
+				547B332719ADBD270058731C /* han2.png */,
+				547B332819ADBD270058731C /* han2@2x.png */,
+				547B333619ADBD270058731C /* qwerty.png */,
+				547B333719ADBD270058731C /* qwerty@2x.png */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +226,6 @@
 					};
 					540E011A19AC6FF9008538D3 = {
 						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 540E010719AC6FF8008538D3;
 					};
 				};
 			};
@@ -217,8 +253,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547B333B19ADBD270058731C /* COPYING in Resources */,
+				547B333D19ADBD270058731C /* dvorak@2x.png in Resources */,
 				540E011319AC6FF8008538D3 /* Images.xcassets in Resources */,
+				547B334A19ADBD270058731C /* han2@2x.png in Resources */,
+				547B334019ADBD270058731C /* Gureum.iconset in Resources */,
+				547B335819ADBD270058731C /* qwerty@2x.png in Resources */,
 				540E011619AC6FF8008538D3 /* MainMenu.xib in Resources */,
+				547B335A19ADBF1D0058731C /* InfoPlist.strings in Resources */,
+				547B334919ADBD270058731C /* han2.png in Resources */,
+				547B333C19ADBD270058731C /* dvorak.png in Resources */,
+				547B335719ADBD270058731C /* qwerty.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +410,10 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/AewolInputMethod/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = AewolInputMethod;
 			};
 			name = Debug;
@@ -380,6 +429,10 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/AewolInputMethod/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = AewolInputMethod;
 			};
 			name = Release;
@@ -387,7 +440,6 @@
 		540E012919AC6FF9008538D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -405,14 +457,12 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = AewolInputMethodTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AewolInputMethod.app/Contents/MacOS/AewolInputMethod";
 			};
 			name = Debug;
 		};
 		540E012A19AC6FF9008538D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -426,7 +476,6 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = AewolInputMethodTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AewolInputMethod.app/Contents/MacOS/AewolInputMethod";
 			};
 			name = Release;
 		};
