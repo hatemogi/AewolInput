@@ -22,6 +22,39 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>ComponentInputModeDict</key>
+	<dict>
+		<key>tsInputModeListKey</key>
+		<dict>
+			<key>com.aewolstory.inputmethod.han2</key>
+			<dict>
+				<key>TISIntendedLanguage</key>
+				<string>ko</string>
+				<key>tsInputModeAlternateMenuIconFileKey</key>
+				<string>han2.png</string>
+				<key>tsInputModeDefaultStateKey</key>
+				<true/>
+				<key>tsInputModeIsVisibleKey</key>
+				<true/>
+				<key>tsInputModeKeyEquivalentKey</key>
+				<string>D</string>
+				<key>tsInputModeKeyEquivalentModifiersKey</key>
+				<integer>4608</integer>
+				<key>tsInputModeMenuIconFileKey</key>
+				<string>han2.png</string>
+				<key>tsInputModePaletteIconFileKey</key>
+				<string>han2.png</string>
+				<key>tsInputModePrimaryInScriptKey</key>
+				<true/>
+				<key>tsInputModeScriptKey</key>
+				<string>smRoman</string>
+			</dict>
+		</dict>
+		<key>tsVisibleInputModeOrderedArrayKey</key>
+		<array>
+			<string>com.aewolstory.inputmethod.han2</string>
+		</array>
+	</dict>
 	<key>InputMethodConnectionName</key>
 	<string>AewolInput_Connection</string>
 	<key>InputMethodServerControllerClass</key>
@@ -45,39 +78,6 @@
 		<string>Latn</string>
 	</array>
 	<key>tsInputMethodIconFileKey</key>
-	<string>han.png</string>
-	<key>ComponentInputModeDict</key>
-	<dict>
-		<key>tsInputModeListKey</key>
-		<dict>
-			<key>com.aewolstory.inputmethod.qwerty</key>
-			<dict>
-				<key>tsInputModeAlternateMenuIconFileKey</key>
-				<string>han2.png</string>
-				<key>tsInputModeDefaultStateKey</key>
-				<true/>
-				<key>TISIntendedLanguage</key>
-				<string>en</string>
-				<key>tsInputModeIsVisibleKey</key>
-				<true/>
-				<key>tsInputModeKeyEquivalentKey</key>
-				<string>D</string>
-				<key>tsInputModeKeyEquivalentModifiersKey</key>
-				<integer>4608</integer>
-				<key>tsInputModeMenuIconFileKey</key>
-				<string>han2.png</string>
-				<key>tsInputModePaletteIconFileKey</key>
-				<string>han2.png</string>
-				<key>tsInputModePrimaryInScriptKey</key>
-				<true/>
-				<key>tsInputModeScriptKey</key>
-				<string>smRoman</string>
-			</dict>
-		</dict>
-		<key>tsVisibleInputModeOrderedArrayKey</key>
-		<array>
-			<string>com.aewolstory.inputmethod.han2</string>
-		</array>
-	</dict>
+	<string>han2.png</string>
 </dict>
 </plist>
