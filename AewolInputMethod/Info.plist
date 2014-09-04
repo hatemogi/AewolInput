@@ -36,10 +36,6 @@
 				<true/>
 				<key>tsInputModeIsVisibleKey</key>
 				<true/>
-				<key>tsInputModeKeyEquivalentKey</key>
-				<string>D</string>
-				<key>tsInputModeKeyEquivalentModifiersKey</key>
-				<integer>4608</integer>
 				<key>tsInputModeMenuIconFileKey</key>
 				<string>han2.png</string>
 				<key>tsInputModePaletteIconFileKey</key>

@@ -17,6 +17,7 @@
 		540E013319AC70C8008538D3 /* AewolInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E013119AC70C8008538D3 /* AewolInputController.m */; };
 		540E013619AC73EE008538D3 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540E012E19AC7084008538D3 /* InputMethodKit.framework */; };
 		540E013A19AD7526008538D3 /* libhangul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540E013919AD7526008538D3 /* libhangul.a */; };
+		54340DEB19B735E500E027F9 /* AewolInputTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54340DEA19B735E500E027F9 /* AewolInputTests.m */; };
 		5439104D19AE1BC200766375 /* libhangul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540E013919AD7526008538D3 /* libhangul.a */; };
 		547B333B19ADBD270058731C /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 547B331819ADBD270058731C /* COPYING */; };
 		547B333C19ADBD270058731C /* dvorak.png in Resources */ = {isa = PBXBuildFile; fileRef = 547B331919ADBD270058731C /* dvorak.png */; };
@@ -62,6 +63,7 @@
 		540E013119AC70C8008538D3 /* AewolInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AewolInputController.m; sourceTree = "<group>"; };
 		540E013919AD7526008538D3 /* libhangul.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhangul.a; sourceTree = "<group>"; };
 		540E013B19AD7578008538D3 /* hangul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hangul.h; sourceTree = "<group>"; };
+		54340DEA19B735E500E027F9 /* AewolInputTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AewolInputTests.m; sourceTree = "<group>"; };
 		547B331819ADBD270058731C /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 		547B331919ADBD270058731C /* dvorak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dvorak.png; sourceTree = "<group>"; };
 		547B331A19ADBD270058731C /* dvorak@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvorak@2x.png"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			children = (
 				540E012119AC6FF9008538D3 /* LibHangulTests.m */,
 				540E011F19AC6FF9008538D3 /* Supporting Files */,
+				54340DEA19B735E500E027F9 /* AewolInputTests.m */,
 			);
 			path = AewolInputMethodTests;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				540E012219AC6FF9008538D3 /* LibHangulTests.m in Sources */,
+				54340DEB19B735E500E027F9 /* AewolInputTests.m in Sources */,
 				540E013319AC70C8008538D3 /* AewolInputController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

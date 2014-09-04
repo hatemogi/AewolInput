@@ -21,8 +21,7 @@ int main(int argc, const char * argv[]) {
     [NSBundle bundleWithIdentifier:@"MainMenu"];
     
     //create the candidate window
-    candidates = [[IMKCandidates alloc] initWithServer:server panelType:kIMKSingleColumnScrollingCandidatePanel];
-    
+//    candidates = [[IMKCandidates alloc] initWithServer:server panelType:kIMKSingleColumnScrollingCandidatePanel];
     
     return NSApplicationMain(argc, argv);
 }

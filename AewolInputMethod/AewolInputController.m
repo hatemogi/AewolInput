@@ -14,7 +14,6 @@
 
 - (void)awakeFromNib {
     NSLog(@"컨텍스트 초기화");
-    ctx = hangul_ic_new("2");
 }
 
 - (NSString *)stringFromUCS4:(const ucschar *)s {
@@ -26,10 +25,9 @@
 {
     if (!hangul_ic_is_empty(ctx)) {
         const ucschar *flush = hangul_ic_flush(ctx);
-        if (flush[0] != 0) {
-            NSString *p = [self stringFromUCS4:flush];
-            [sender insertText:p replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
-        }
+        NSString *p = [self stringFromUCS4:flush];
+        [sender insertText:p replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
+        [sender setMarkedText:@"" selectionRange:NSMakeRange(0,0) replacementRange:NSMakeRange(NSNotFound,NSNotFound)];
     }
 }
 
@@ -50,8 +48,8 @@
     return handled;
 }
 
-#define AEWOL_QWERTY       "asdfhgzxcv\tbqweryt123465=97-80]ou[ip\tlj'k;\\,/nm.\b `"
-#define AEWOL_QWERTY_SHIFT "ASDFHGZXCV\1BQWERYT!@#$^%+(&_*)}OU{IP\tLJ\"K:|<?NM>\b ~"
+#define AEWOL_QWERTY       "asdfhgzxcv\tbqweryt123465=97-80]ou[ip\tlj'k;\\,/nm.\t `\b"
+#define AEWOL_QWERTY_SHIFT "ASDFHGZXCV\tBQWERYT!@#$^%+(&_*)}OU{IP\tLJ\"K:|<?NM>\t ~\b"
 #define AEWOL_DVORAK       ""
 #define AEWOL_DVORAK_SHIFT ""
 
@@ -67,17 +65,18 @@
     NSUInteger fn_shift_mask = NSShiftKeyMask | FN_KEY_MASK;
     BOOL fn_or_shift = (flags | fn_shift_mask) == fn_shift_mask;
 
+//    NSLog(@"flags=%ld, fn_or_shift=%d, keycode=%ld", flags, fn_or_shift, keyCode);
     if (!fn_or_shift || keyCode > MAX_KEYCODE) {
         [self flushPreedit:sender];
         return NO;
     }
-    // NSLog(@"flags=%ld, fn_or_shift=%d, keycode=%ld", flags, fn_or_shift, keyCode);
 
     int shift = ((flags & NSShiftKeyMask) > 0) ? 1 : 0;
     char ascii = keymaps[shift][keyCode];
+//    NSLog(@"ascii=%c", ascii);
     
     if (ascii == '\b') {
-        if (flags & FN_KEY_MASK) {
+        if ((flags & FN_KEY_MASK) == FN_KEY_MASK) {
             // fn backspace는 delete 키로 처리됨.
             [self flushPreedit:sender];
             return NO;
@@ -107,8 +106,25 @@
 {
     NSString *newMode = (NSString *)value;
     NSLog(@"New mode key = %@", newMode);
-    if (ctx) hangul_ic_delete(ctx);
+}
+
+-(NSMenu*)menu
+{
+    AppDelegate *delegate = (AppDelegate *)[NSApp delegate];
+    return [delegate menu];
+}
+
+-(void)activateServer:(id)sender
+{
+    NSLog(@"activate");
     ctx = hangul_ic_new("2");
+}
+
+-(void)deactivateServer:(id)sender
+{
+    NSLog(@"deactivate");
+    [self flushPreedit:sender];
+    if (ctx) hangul_ic_delete(ctx);
 }
 
 -(void)commitComposition:(id)sender
@@ -125,22 +141,6 @@
 -(void)cancelComposition
 {
     NSLog(@"cancelComposition called");
-}
-
--(NSMenu*)menu
-{
-    AppDelegate *delegate = (AppDelegate *)[NSApp delegate];
-    return [delegate menu];
-}
-
--(void)activateServer:(id)sender
-{
-    NSLog(@"activate");
-}
-
--(void)deactivateServer:(id)sender
-{
-    NSLog(@"deactivate");
 }
 
 @end
