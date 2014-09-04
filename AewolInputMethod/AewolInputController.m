@@ -12,11 +12,8 @@
 
 @implementation AewolInputController
 
-- (void)awakeFromNib {
-    NSLog(@"컨텍스트 초기화");
-}
-
-- (NSString *)stringFromUCS4:(const ucschar *)s {
+- (NSString *)stringFromUCS4:(const ucschar *)s
+{
     if (s == NULL) return @"";
     return [NSString stringWithCharacters:(unichar *)s length: wcslen((const wchar_t *)s)];
 }
@@ -53,7 +50,8 @@
 #define AEWOL_DVORAK       ""
 #define AEWOL_DVORAK_SHIFT ""
 
-- (BOOL)handleEvent:(NSEvent *)event client:(id)sender {
+- (BOOL)handleEvent:(NSEvent *)event client:(id)sender
+{
     NSInteger keyCode = event.keyCode;
     NSUInteger flags = event.modifierFlags;
 
@@ -116,13 +114,13 @@
 
 -(void)activateServer:(id)sender
 {
-    NSLog(@"activate");
+//    NSLog(@"activate");
     ctx = hangul_ic_new("2");
 }
 
 -(void)deactivateServer:(id)sender
 {
-    NSLog(@"deactivate");
+//    NSLog(@"deactivate");
     [self flushPreedit:sender];
     if (ctx) hangul_ic_delete(ctx);
 }
