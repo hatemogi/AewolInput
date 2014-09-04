@@ -226,6 +226,7 @@
 				TargetAttributes = {
 					540E010719AC6FF8008538D3 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 4KBAA68FP4;
 					};
 					540E011A19AC6FF9008538D3 = {
 						CreatedOnToolsVersion = 6.0;
@@ -418,7 +419,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = AewolInputMethod;
+				SDKROOT = macosx10.9;
 			};
 			name = Debug;
 		};
@@ -437,7 +440,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = AewolInputMethod;
+				SDKROOT = macosx10.9;
 			};
 			name = Release;
 		};
