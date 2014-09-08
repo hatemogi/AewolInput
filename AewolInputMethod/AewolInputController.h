@@ -11,9 +11,11 @@
 
 @interface AewolInputController : IMKInputController {
     HangulInputContext *ctx;
+    BOOL debug;
 }
 
 - (BOOL)handleEvent:(NSEvent *)event client:(id)sender;
+- (IBAction)toggleDebug:(id)sender;
 
 @end
 
