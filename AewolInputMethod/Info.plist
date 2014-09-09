@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIconFile</key>
-	<string>Gureum.icns</string>
+	<string>aewol.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.aewolstory.inputmethod.Aewol</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -31,15 +31,15 @@
 				<key>TISIntendedLanguage</key>
 				<string>ko</string>
 				<key>tsInputModeAlternateMenuIconFileKey</key>
-				<string>han2.png</string>
+				<string>awhan_rev.png</string>
 				<key>tsInputModeDefaultStateKey</key>
 				<true/>
 				<key>tsInputModeIsVisibleKey</key>
 				<true/>
 				<key>tsInputModeMenuIconFileKey</key>
-				<string>han2.png</string>
+				<string>awhan.png</string>
 				<key>tsInputModePaletteIconFileKey</key>
-				<string>han2.png</string>
+				<string>awhan.png</string>
 				<key>tsInputModePrimaryInScriptKey</key>
 				<true/>
 				<key>tsInputModeScriptKey</key>
@@ -74,6 +74,6 @@
 		<string>Hang</string>
 	</array>
 	<key>tsInputMethodIconFileKey</key>
-	<string>han2.png</string>
+	<string>aw2.png</string>
 </dict>
 </plist>
