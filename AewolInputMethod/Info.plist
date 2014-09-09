@@ -31,15 +31,15 @@
 				<key>TISIntendedLanguage</key>
 				<string>ko</string>
 				<key>tsInputModeAlternateMenuIconFileKey</key>
-				<string>awhan_rev.png</string>
+				<string>han2_rev.png</string>
 				<key>tsInputModeDefaultStateKey</key>
 				<true/>
 				<key>tsInputModeIsVisibleKey</key>
 				<true/>
 				<key>tsInputModeMenuIconFileKey</key>
-				<string>awhan.png</string>
+				<string>han2.png</string>
 				<key>tsInputModePaletteIconFileKey</key>
-				<string>awhan.png</string>
+				<string>han2.png</string>
 				<key>tsInputModePrimaryInScriptKey</key>
 				<true/>
 				<key>tsInputModeScriptKey</key>
@@ -74,6 +74,6 @@
 		<string>Hang</string>
 	</array>
 	<key>tsInputMethodIconFileKey</key>
-	<string>aw2.png</string>
+	<string>han2.png</string>
 </dict>
 </plist>

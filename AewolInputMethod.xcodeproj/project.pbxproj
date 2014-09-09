@@ -17,21 +17,16 @@
 		540E013319AC70C8008538D3 /* AewolInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540E013119AC70C8008538D3 /* AewolInputController.m */; };
 		540E013619AC73EE008538D3 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540E012E19AC7084008538D3 /* InputMethodKit.framework */; };
 		540E013A19AD7526008538D3 /* libhangul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540E013919AD7526008538D3 /* libhangul.a */; };
+		5431BBC819BFBDD9003D59B7 /* han2_rev.png in Resources */ = {isa = PBXBuildFile; fileRef = 5431BBC019BFBDD9003D59B7 /* han2_rev.png */; };
+		5431BBC919BFBDD9003D59B7 /* han2_rev@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5431BBC119BFBDD9003D59B7 /* han2_rev@2x.png */; };
+		5431BBCA19BFBDD9003D59B7 /* han2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5431BBC219BFBDD9003D59B7 /* han2.png */; };
+		5431BBCB19BFBDD9003D59B7 /* han2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5431BBC319BFBDD9003D59B7 /* han2@2x.png */; };
+		5431BBCC19BFBDD9003D59B7 /* han3_rev.png in Resources */ = {isa = PBXBuildFile; fileRef = 5431BBC419BFBDD9003D59B7 /* han3_rev.png */; };
+		5431BBCD19BFBDD9003D59B7 /* han3_rev@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5431BBC519BFBDD9003D59B7 /* han3_rev@2x.png */; };
+		5431BBCE19BFBDD9003D59B7 /* han3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5431BBC619BFBDD9003D59B7 /* han3.png */; };
+		5431BBCF19BFBDD9003D59B7 /* han3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5431BBC719BFBDD9003D59B7 /* han3@2x.png */; };
 		54340DEB19B735E500E027F9 /* AewolInputTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54340DEA19B735E500E027F9 /* AewolInputTests.m */; };
-		5437009719BF2F1800C0A0D1 /* awhan_rev.png in Resources */ = {isa = PBXBuildFile; fileRef = 5437009319BF2F1800C0A0D1 /* awhan_rev.png */; };
-		5437009819BF2F1800C0A0D1 /* awhan_rev@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5437009419BF2F1800C0A0D1 /* awhan_rev@2x.png */; };
-		5437009919BF2F1800C0A0D1 /* awhan.png in Resources */ = {isa = PBXBuildFile; fileRef = 5437009519BF2F1800C0A0D1 /* awhan.png */; };
-		5437009A19BF2F1800C0A0D1 /* awhan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5437009619BF2F1800C0A0D1 /* awhan@2x.png */; };
 		5439104D19AE1BC200766375 /* libhangul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540E013919AD7526008538D3 /* libhangul.a */; };
-		5439CBE119BED4ED001889B3 /* aw2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5439CBE019BED4ED001889B3 /* aw2@2x.png */; };
-		5439CBE319BED4F5001889B3 /* aw3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5439CBE219BED4F5001889B3 /* aw3@2x.png */; };
-		5439CBE619BED599001889B3 /* aw2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5439CBE419BED599001889B3 /* aw2.png */; };
-		5439CBE719BED599001889B3 /* aw3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5439CBE519BED599001889B3 /* aw3.png */; };
-		5441610D19BEDDE4005178F1 /* aw2_rev.png in Resources */ = {isa = PBXBuildFile; fileRef = 5441610B19BEDDE4005178F1 /* aw2_rev.png */; };
-		5441610E19BEDDE4005178F1 /* aw2_rev@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5441610C19BEDDE4005178F1 /* aw2_rev@2x.png */; };
-		5441611119BF191A005178F1 /* aw3_rev.png in Resources */ = {isa = PBXBuildFile; fileRef = 5441610F19BF191A005178F1 /* aw3_rev.png */; };
-		5441611219BF191A005178F1 /* aw3_rev@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5441611019BF191A005178F1 /* aw3_rev@2x.png */; };
-		5441611419BF252D005178F1 /* aewol.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 5441611319BF252D005178F1 /* aewol.iconset */; };
 		5441611D19BF254B005178F1 /* qw_rev.png in Resources */ = {isa = PBXBuildFile; fileRef = 5441611519BF254A005178F1 /* qw_rev.png */; };
 		5441611E19BF254B005178F1 /* qw_rev@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5441611619BF254A005178F1 /* qw_rev@2x.png */; };
 		5441611F19BF254B005178F1 /* qw.png in Resources */ = {isa = PBXBuildFile; fileRef = 5441611719BF254A005178F1 /* qw.png */; };
@@ -76,20 +71,15 @@
 		540E013119AC70C8008538D3 /* AewolInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AewolInputController.m; sourceTree = "<group>"; };
 		540E013919AD7526008538D3 /* libhangul.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhangul.a; sourceTree = "<group>"; };
 		540E013B19AD7578008538D3 /* hangul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hangul.h; sourceTree = "<group>"; };
+		5431BBC019BFBDD9003D59B7 /* han2_rev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = han2_rev.png; sourceTree = "<group>"; };
+		5431BBC119BFBDD9003D59B7 /* han2_rev@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "han2_rev@2x.png"; sourceTree = "<group>"; };
+		5431BBC219BFBDD9003D59B7 /* han2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = han2.png; sourceTree = "<group>"; };
+		5431BBC319BFBDD9003D59B7 /* han2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "han2@2x.png"; sourceTree = "<group>"; };
+		5431BBC419BFBDD9003D59B7 /* han3_rev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = han3_rev.png; sourceTree = "<group>"; };
+		5431BBC519BFBDD9003D59B7 /* han3_rev@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "han3_rev@2x.png"; sourceTree = "<group>"; };
+		5431BBC619BFBDD9003D59B7 /* han3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = han3.png; sourceTree = "<group>"; };
+		5431BBC719BFBDD9003D59B7 /* han3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "han3@2x.png"; sourceTree = "<group>"; };
 		54340DEA19B735E500E027F9 /* AewolInputTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AewolInputTests.m; sourceTree = "<group>"; };
-		5437009319BF2F1800C0A0D1 /* awhan_rev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awhan_rev.png; sourceTree = "<group>"; };
-		5437009419BF2F1800C0A0D1 /* awhan_rev@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "awhan_rev@2x.png"; sourceTree = "<group>"; };
-		5437009519BF2F1800C0A0D1 /* awhan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awhan.png; sourceTree = "<group>"; };
-		5437009619BF2F1800C0A0D1 /* awhan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "awhan@2x.png"; sourceTree = "<group>"; };
-		5439CBE019BED4ED001889B3 /* aw2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aw2@2x.png"; sourceTree = "<group>"; };
-		5439CBE219BED4F5001889B3 /* aw3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aw3@2x.png"; sourceTree = "<group>"; };
-		5439CBE419BED599001889B3 /* aw2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aw2.png; sourceTree = "<group>"; };
-		5439CBE519BED599001889B3 /* aw3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aw3.png; sourceTree = "<group>"; };
-		5441610B19BEDDE4005178F1 /* aw2_rev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aw2_rev.png; sourceTree = "<group>"; };
-		5441610C19BEDDE4005178F1 /* aw2_rev@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aw2_rev@2x.png"; sourceTree = "<group>"; };
-		5441610F19BF191A005178F1 /* aw3_rev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aw3_rev.png; sourceTree = "<group>"; };
-		5441611019BF191A005178F1 /* aw3_rev@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aw3_rev@2x.png"; sourceTree = "<group>"; };
-		5441611319BF252D005178F1 /* aewol.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = aewol.iconset; sourceTree = "<group>"; };
 		5441611519BF254A005178F1 /* qw_rev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qw_rev.png; sourceTree = "<group>"; };
 		5441611619BF254A005178F1 /* qw_rev@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qw_rev@2x.png"; sourceTree = "<group>"; };
 		5441611719BF254A005178F1 /* qw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qw.png; sourceTree = "<group>"; };
@@ -190,11 +180,14 @@
 		547B331419ADBD270058731C /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				5437009319BF2F1800C0A0D1 /* awhan_rev.png */,
-				5437009419BF2F1800C0A0D1 /* awhan_rev@2x.png */,
-				5437009519BF2F1800C0A0D1 /* awhan.png */,
-				5437009619BF2F1800C0A0D1 /* awhan@2x.png */,
-				5441611319BF252D005178F1 /* aewol.iconset */,
+				5431BBC019BFBDD9003D59B7 /* han2_rev.png */,
+				5431BBC119BFBDD9003D59B7 /* han2_rev@2x.png */,
+				5431BBC219BFBDD9003D59B7 /* han2.png */,
+				5431BBC319BFBDD9003D59B7 /* han2@2x.png */,
+				5431BBC419BFBDD9003D59B7 /* han3_rev.png */,
+				5431BBC519BFBDD9003D59B7 /* han3_rev@2x.png */,
+				5431BBC619BFBDD9003D59B7 /* han3.png */,
+				5431BBC719BFBDD9003D59B7 /* han3@2x.png */,
 				5441611519BF254A005178F1 /* qw_rev.png */,
 				5441611619BF254A005178F1 /* qw_rev@2x.png */,
 				5441611719BF254A005178F1 /* qw.png */,
@@ -203,14 +196,6 @@
 				5441611A19BF254B005178F1 /* dv_rev@2x.png */,
 				5441611B19BF254B005178F1 /* dv.png */,
 				5441611C19BF254B005178F1 /* dv@2x.png */,
-				5441610F19BF191A005178F1 /* aw3_rev.png */,
-				5441611019BF191A005178F1 /* aw3_rev@2x.png */,
-				5441610B19BEDDE4005178F1 /* aw2_rev.png */,
-				5441610C19BEDDE4005178F1 /* aw2_rev@2x.png */,
-				5439CBE419BED599001889B3 /* aw2.png */,
-				5439CBE019BED4ED001889B3 /* aw2@2x.png */,
-				5439CBE519BED599001889B3 /* aw3.png */,
-				5439CBE219BED4F5001889B3 /* aw3@2x.png */,
 			);
 			path = Icons;
 			sourceTree = "<group>";
@@ -296,30 +281,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5437009A19BF2F1800C0A0D1 /* awhan@2x.png in Resources */,
-				5441610E19BEDDE4005178F1 /* aw2_rev@2x.png in Resources */,
-				5439CBE119BED4ED001889B3 /* aw2@2x.png in Resources */,
-				5437009819BF2F1800C0A0D1 /* awhan_rev@2x.png in Resources */,
+				5431BBCA19BFBDD9003D59B7 /* han2.png in Resources */,
 				5441611D19BF254B005178F1 /* qw_rev.png in Resources */,
 				5441612319BF254B005178F1 /* dv.png in Resources */,
-				5437009719BF2F1800C0A0D1 /* awhan_rev.png in Resources */,
-				5441611219BF191A005178F1 /* aw3_rev@2x.png in Resources */,
+				5431BBCD19BFBDD9003D59B7 /* han3_rev@2x.png in Resources */,
 				540E011319AC6FF8008538D3 /* Images.xcassets in Resources */,
-				5441610D19BEDDE4005178F1 /* aw2_rev.png in Resources */,
 				5441612219BF254B005178F1 /* dv_rev@2x.png in Resources */,
+				5431BBCC19BFBDD9003D59B7 /* han3_rev.png in Resources */,
+				5431BBC919BFBDD9003D59B7 /* han2_rev@2x.png in Resources */,
+				5431BBC819BFBDD9003D59B7 /* han2_rev.png in Resources */,
+				5431BBCF19BFBDD9003D59B7 /* han3@2x.png in Resources */,
 				5441611E19BF254B005178F1 /* qw_rev@2x.png in Resources */,
-				5439CBE619BED599001889B3 /* aw2.png in Resources */,
-				5439CBE319BED4F5001889B3 /* aw3@2x.png in Resources */,
-				5439CBE719BED599001889B3 /* aw3.png in Resources */,
 				5441612419BF254B005178F1 /* dv@2x.png in Resources */,
+				5431BBCE19BFBDD9003D59B7 /* han3.png in Resources */,
+				5431BBCB19BFBDD9003D59B7 /* han2@2x.png in Resources */,
 				5441611F19BF254B005178F1 /* qw.png in Resources */,
 				540E011619AC6FF8008538D3 /* MainMenu.xib in Resources */,
-				5441611119BF191A005178F1 /* aw3_rev.png in Resources */,
-				5441611419BF252D005178F1 /* aewol.iconset in Resources */,
 				5441612119BF254B005178F1 /* dv_rev.png in Resources */,
 				5441612019BF254B005178F1 /* qw@2x.png in Resources */,
 				547B335A19ADBF1D0058731C /* InfoPlist.strings in Resources */,
-				5437009919BF2F1800C0A0D1 /* awhan.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +446,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/AewolInputMethod/Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Input Methods";
+				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,7 +468,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/AewolInputMethod/Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Input Methods";
+				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
