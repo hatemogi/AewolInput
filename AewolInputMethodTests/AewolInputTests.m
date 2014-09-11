@@ -15,6 +15,7 @@
 
 - (void)insertText:(NSString *)text replacementRange:(NSRange)r;
 - (void)setMarkedText:(NSString *)text selectionRange:(NSRange)sr replacementRange:(NSRange *)rr;
+- (NSRange)markedRange;
 
 @end
 
@@ -28,6 +29,9 @@
     NSLog(@"mock.setMarkedText(%@)", text);
 }
 
+- (NSRange)markedRange {
+    return NSMakeRange(NSNotFound, NSNotFound);
+}
 @end
 
 @interface AewolInputTests : XCTestCase {
@@ -43,7 +47,7 @@
     [super setUp];
     mock = [MockClient new];
     controller = [AewolInputController new];
-    [controller awakeFromNib];
+    [controller activateServer:mock];
 }
 
 - (void)tearDown {

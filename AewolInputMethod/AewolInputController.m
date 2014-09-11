@@ -12,18 +12,7 @@
 
 #define AWLog(...) {if (debug) NSLog(__VA_ARGS__);}
 
-// @TODO, 현재 사파리에서 텍스트필드에 처음 포커스가 가면, 첫번째 키가 안눌리는 문제가 있음.
-
 @implementation AewolInputController
-
-// initWithServer: server=<IMKServer: 0x600000000b60>, delegate=(null), client=<IMKXPCCompatibilityDOProxyInterposer: 0x608000001ca0>
-- (id)initWithServer:(IMKServer *)server delegate:(id)delegate client:(id)client {
-    self = [super initWithServer:server delegate:delegate client:client];
-    if (self != nil) {
-        NSLog(@"initWithServer: server=%@, delegate=%@, client=%@", server, delegate, client);
-    }
-    return self;
-}
 
 - (void)awakeFromNib
 {
@@ -71,11 +60,9 @@
         }
         NSString *p = [self stringFromUCS4:preedit];
         NSRange m = [sender markedRange];
-        NSRange nm = NSMakeRange(m.location, p.length);
         AWLog(@"preedit=[%@], marked=(%ld, %ld)", p, m.location, m.length);
-        if (m.length > 0 || nm.length > 0) {
-            [sender setMarkedText:p selectionRange:nm replacementRange:m];
-//            [sender setSelectedRange:nm];eh.n
+        if (m.length > 0 || p.length > 0) {
+            [sender setMarkedText:p selectionRange:NSMakeRange(m.location, p.length) replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
         }
     }
 
@@ -125,11 +112,12 @@
             // 알파벳이 아니거나, fn 조합으로 누를 경우에는 qwerty 입력처리하자.
             [self flushPreedit:sender];
             if (ascii == '\t') {
+                // FIX: 페북에서 사용자멘션 자동입력후 엔터누르면 마지막 preedit도 중복 입력됨. 예) 김대현현
                 AWLog(@"bypassing keycode=%ld, flags=%ld", keyCode, flags);
                 return NO;
             } else {
                 AWLog(@"sending [%c] for %ld", ascii, keyCode);
-                [sender insertText:ascii_s replacementRange:NSMakeRange(NSNotFound, 1)];
+                [sender insertText:ascii_s replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
                 return YES;
             }
         } else {

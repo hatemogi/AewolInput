@@ -69,8 +69,8 @@
 		540E012E19AC7084008538D3 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = System/Library/Frameworks/InputMethodKit.framework; sourceTree = SDKROOT; };
 		540E013019AC70C8008538D3 /* AewolInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AewolInputController.h; sourceTree = "<group>"; };
 		540E013119AC70C8008538D3 /* AewolInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AewolInputController.m; sourceTree = "<group>"; };
-		540E013919AD7526008538D3 /* libhangul.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhangul.a; sourceTree = "<group>"; };
-		540E013B19AD7578008538D3 /* hangul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hangul.h; sourceTree = "<group>"; };
+		540E013919AD7526008538D3 /* libhangul.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.objfile"; name = libhangul.a; path = libhangul/libhangul.a; sourceTree = "<group>"; };
+		540E013B19AD7578008538D3 /* hangul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hangul.h; path = libhangul/hangul.h; sourceTree = "<group>"; };
 		5431BBC019BFBDD9003D59B7 /* han2_rev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = han2_rev.png; sourceTree = "<group>"; };
 		5431BBC119BFBDD9003D59B7 /* han2_rev@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "han2_rev@2x.png"; sourceTree = "<group>"; };
 		5431BBC219BFBDD9003D59B7 /* han2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = han2.png; sourceTree = "<group>"; };
@@ -116,8 +116,7 @@
 		540E00FF19AC6FF8008538D3 = {
 			isa = PBXGroup;
 			children = (
-				540E013B19AD7578008538D3 /* hangul.h */,
-				540E013919AD7526008538D3 /* libhangul.a */,
+				54501CA119C072C10056A630 /* libhangul */,
 				540E010A19AC6FF8008538D3 /* AewolInputMethod */,
 				540E011E19AC6FF9008538D3 /* AewolInputMethodTests */,
 				540E010919AC6FF8008538D3 /* Products */,
@@ -137,14 +136,14 @@
 		540E010A19AC6FF8008538D3 /* AewolInputMethod */ = {
 			isa = PBXGroup;
 			children = (
-				547B331419ADBD270058731C /* Icons */,
+				540E013019AC70C8008538D3 /* AewolInputController.h */,
+				540E013119AC70C8008538D3 /* AewolInputController.m */,
 				540E010F19AC6FF8008538D3 /* AppDelegate.h */,
 				540E011019AC6FF8008538D3 /* AppDelegate.m */,
+				547B331419ADBD270058731C /* Icons */,
 				540E011219AC6FF8008538D3 /* Images.xcassets */,
 				540E011419AC6FF8008538D3 /* MainMenu.xib */,
 				540E010B19AC6FF8008538D3 /* Supporting Files */,
-				540E013019AC70C8008538D3 /* AewolInputController.h */,
-				540E013119AC70C8008538D3 /* AewolInputController.m */,
 			);
 			path = AewolInputMethod;
 			sourceTree = "<group>";
@@ -163,8 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				540E012119AC6FF9008538D3 /* LibHangulTests.m */,
-				540E011F19AC6FF9008538D3 /* Supporting Files */,
 				54340DEA19B735E500E027F9 /* AewolInputTests.m */,
+				540E011F19AC6FF9008538D3 /* Supporting Files */,
 			);
 			path = AewolInputMethodTests;
 			sourceTree = "<group>";
@@ -175,6 +174,15 @@
 				540E012019AC6FF9008538D3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54501CA119C072C10056A630 /* libhangul */ = {
+			isa = PBXGroup;
+			children = (
+				540E013B19AD7578008538D3 /* hangul.h */,
+				540E013919AD7526008538D3 /* libhangul.a */,
+			);
+			name = libhangul;
 			sourceTree = "<group>";
 		};
 		547B331419ADBD270058731C /* Icons */ = {
@@ -394,10 +402,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.9;
 			};
 			name = Debug;
 		};
@@ -430,9 +438,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.9;
 			};
 			name = Release;
 		};
@@ -500,6 +508,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = AewolInputMethodTests;
+				SDKROOT = macosx10.9;
 			};
 			name = Debug;
 		};
@@ -519,6 +528,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = AewolInputMethodTests;
+				SDKROOT = macosx10.9;
 			};
 			name = Release;
 		};
