@@ -25,7 +25,8 @@
     NSLog(@"debugMode = %d, sender=%@", debug, sender);
 }
 
-- (IBAction)openWebsite:(id)sender {
+- (IBAction)openWebsite:(id)sender
+{
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://input.aewolstory.com"]];
 }
 
@@ -128,50 +129,50 @@
     }
 }
 
--(void)setValue:(id)value forTag:(long)tag client:(id)sender
+- (void)setValue:(id)value forTag:(long)tag client:(id)sender
 {
     NSString *newMode = (NSString *)value;
     // kTextServiceInputModePropertyTag
     AWLog(@"newMode = %@ for tag = %ld, client = %@", newMode, tag, sender);
 }
 
--(id)valueForTag:(long)tag client:(id)sender
+- (id)valueForTag:(long)tag client:(id)sender
 {
     AWLog(@"valueForTag called tag=%ld, client=%@", tag, sender);
     return [super valueForTag:tag client:sender];
 }
 
--(NSMenu*)menu
+- (NSMenu*)menu
 {
     AppDelegate *delegate = (AppDelegate *)[NSApp delegate];
     return [delegate menu];
 }
 
--(void)activateServer:(id)sender
+- (void)activateServer:(id)sender
 {
     AWLog(@"activate %@", sender);
     ctx = hangul_ic_new("2");
 }
 
--(void)deactivateServer:(id)sender
+- (void)deactivateServer:(id)sender
 {
     AWLog(@"deactivate %@", sender);
     [self flushPreedit:sender];
     if (ctx) hangul_ic_delete(ctx);
 }
 
--(void)commitComposition:(id)sender
+- (void)commitComposition:(id)sender
 {
     AWLog(@"commitComposition called");
     [self flushPreedit:sender];
 }
 
--(void)updateComposition
+- (void)updateComposition
 {
     AWLog(@"updateComposition called");
 }
 
--(void)cancelComposition
+- (void)cancelComposition
 {
     AWLog(@"cancelComposition called");
 }
