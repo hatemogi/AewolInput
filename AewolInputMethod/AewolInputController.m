@@ -77,6 +77,11 @@
 
 - (BOOL)handleEvent:(NSEvent *)event client:(id)sender
 {
+    if (event.type != NSKeyDown) {
+        AWLog(@"handleEvent for %ld", event.type);
+        return NO;
+    }
+
     NSInteger keyCode = event.keyCode;
     NSUInteger flags = event.modifierFlags;
 
@@ -175,6 +180,11 @@
 - (void)cancelComposition
 {
     AWLog(@"cancelComposition called");
+}
+
+- (NSUInteger)recognizedEvents:(id)sender
+{
+    return NSKeyDownMask | NSLeftMouseDownMask | NSRightMouseDownMask | NSLeftMouseDraggedMask | NSRightMouseDraggedMask;
 }
 
 @end
