@@ -90,17 +90,17 @@
 
     // fn키 누르면, NSNumericPadKeyMask가 켜져서 온다.
     NSUInteger FN_KEY_MASK = NSFunctionKeyMask | NSNumericPadKeyMask;
-    NSUInteger fn_shift_mask = NSShiftKeyMask | FN_KEY_MASK;
-    BOOL fn_or_shift = (flags | fn_shift_mask) == fn_shift_mask;
+    NSUInteger fn_shift_caps_mask = NSShiftKeyMask | NSAlphaShiftKeyMask | FN_KEY_MASK;
+    BOOL accepting_flags = (flags | fn_shift_caps_mask) == fn_shift_caps_mask;
 
-    AWLog(@"flags=%ld, fn_or_shift=%d, keycode=%ld", flags, fn_or_shift, keyCode);
-    if (!fn_or_shift || keyCode > MAX_KEYCODE) {
+    AWLog(@"flags=%ld, accepting_flags=%d, keycode=%ld", flags, accepting_flags, keyCode);
+    if (!accepting_flags || keyCode > MAX_KEYCODE) {
         AWLog(@"bypassing");
         [self flushPreedit:sender];
         return NO;
     }
 
-    int shift = ((flags & NSShiftKeyMask) > 0) ? 1 : 0;
+    BOOL shift = (flags & NSShiftKeyMask) > 0;
     char ascii = keymaps[shift][keyCode];
     
     if (ascii == '\b') {
@@ -112,8 +112,6 @@
             return [self updateBothCommitAndPreedit:hangul_ic_backspace(ctx) client:sender];
         }
     } else {
-        NSString *ascii_s = [NSString stringWithFormat:@"%c", ascii];
-    
         if (!isalpha(ascii) || (flags & NSFunctionKeyMask) > 0) {
             // 알파벳이 아니거나, fn 조합으로 누를 경우에는 qwerty 입력처리하자.
             [self flushPreedit:sender];
@@ -122,8 +120,10 @@
                 AWLog(@"bypassing keycode=%ld, flags=%ld", keyCode, flags);
                 return NO;
             } else {
-                AWLog(@"sending [%c] for %ld", ascii, keyCode);
-                [sender insertText:ascii_s replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
+                BOOL caps = ((flags & NSAlphaShiftKeyMask) > 0) && isalpha(ascii);
+                ascii = keymaps[shift | caps][keyCode]; // capslock 키반영
+                AWLog(@"sending [%c] (caps=%d) for %ld", ascii, caps, keyCode);
+                [sender insertText:[NSString stringWithFormat:@"%c", ascii] replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
                 return YES;
             }
         } else {
