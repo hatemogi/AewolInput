@@ -14,14 +14,11 @@ IMKCandidates*		candidates = nil;
 
 
 int main(int argc, const char * argv[]) {
-    server = [[IMKServer alloc] initWithName:@"Aewol_Connection" bundleIdentifier:[[NSBundle mainBundle] bundleIdentifier]];
+    server = [[IMKServer alloc] initWithName:@"AewolInput_Connection" bundleIdentifier:[[NSBundle mainBundle] bundleIdentifier]];
     
     NSLog(@"Server created: %@", server);
     //load the bundle explicitly because in this case the input method is a background only application
     [NSBundle bundleWithIdentifier:@"MainMenu"];
-    
-    //create the candidate window
-//    candidates = [[IMKCandidates alloc] initWithServer:server panelType:kIMKSingleColumnScrollingCandidatePanel];
-    
+
     return NSApplicationMain(argc, argv);
 }
