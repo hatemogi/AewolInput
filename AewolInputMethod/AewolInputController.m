@@ -38,13 +38,20 @@
 
 - (void)flushPreedit:(id)sender
 {
+    NSString *ps = [self flushPreeditString:sender];
+    if ([ps length] > 0) {
+        [sender insertText:ps replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
+        AWLog(@"flushing [%@]", ps);
+    }
+}
+
+- (NSString *)flushPreeditString:(id)sender
+{
     if (!hangul_ic_is_empty(ctx)) {
         const ucschar *flush = hangul_ic_flush(ctx);
-        NSString *p = [self stringFromUCS4:flush];
-        [sender insertText:p replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
-        NSRange m = [sender markedRange];
-        AWLog(@"flushing [%@]", p);
-        [sender setMarkedText:@"" selectionRange:NSMakeRange(m.location, 0) replacementRange:m];
+        return [self stringFromUCS4:flush];
+    } else {
+        return @"";
     }
 }
 
@@ -62,9 +69,7 @@
         NSString *p = [self stringFromUCS4:preedit];
         NSRange m = [sender markedRange];
         AWLog(@"preedit=[%@], marked=(%ld, %ld)", p, m.location, m.length);
-        if (m.length > 0 || p.length > 0) {
-            [sender setMarkedText:p selectionRange:NSMakeRange(m.location, p.length) replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
-        }
+        [sender setMarkedText:p selectionRange:NSMakeRange(m.location, p.length) replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
     }
 
     return handled;
@@ -114,16 +119,18 @@
     } else {
         if (!isalpha(ascii) || (flags & NSFunctionKeyMask) > 0) {
             // 알파벳이 아니거나, fn 조합으로 누를 경우에는 qwerty 입력처리하자.
-            [self flushPreedit:sender];
             if (ascii == '\t') {
                 // FIX: 페북에서 사용자멘션 자동입력후 엔터누르면 마지막 preedit도 중복 입력됨. 예) 김대현현
                 AWLog(@"bypassing keycode=%ld, flags=%ld", keyCode, flags);
+                [self flushPreedit:sender];
                 return NO;
             } else {
                 BOOL caps = ((flags & NSAlphaShiftKeyMask) > 0) && isalpha(ascii);
                 ascii = keymaps[shift | caps][keyCode]; // capslock 키반영
-                AWLog(@"sending [%c] (caps=%d) for %ld", ascii, caps, keyCode);
-                [sender insertText:[NSString stringWithFormat:@"%c", ascii] replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
+
+                NSString *ascii_s = [NSString stringWithFormat:@"%@%c" , [self flushPreeditString:sender], ascii];
+                AWLog(@"sending [%@] (caps=%d) for %ld", ascii_s, caps, keyCode);
+                [sender insertText:ascii_s replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
                 return YES;
             }
         } else {
