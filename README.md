@@ -1,6 +1,6 @@
 # 애월 입력기
 
-Apple OS X에서 영문 드보락(Dvorak) 자판과 함께 쓸 수 있는 한글 입력기입니다. 
+Apple OS X에서 영문 드보락(Dvorak) 자판과 함께 쓸 수 있는 한글 입력기입니다.
 
 > [프로젝트 배경에 대한 상세한(장황한?) 설명](https://medium.com/happyprogrammer-in-jeju/dvorak과-한글-입력기-개발-8940bc4714a1)
 
@@ -41,9 +41,13 @@ Apple OS X에서 영문 드보락(Dvorak) 자판과 함께 쓸 수 있는 한글
 
 ## 현재 상태
 
-현재 초기 테스트 버전이며, 아직 두벌식 입력만을 지원합니다. 세벌식 모드나 한자 입력은 지원하지 않습니다. OSX 10.10 Yosemite DP7에서 테스트했습니다.
+현재 초기 테스트 버전이며, 아직 두벌식 입력만을 지원합니다. 세벌식 모드나 한자 입력은 지원하지 않습니다. OSX 10.10 Yosemite DP7에서 최초 개발했고, 작성자는 El Capitan에서 잘 쓰고 있습니다.
 
 ![](img/aw2dv@2x.png)
+
+## 알려진 문제
+
+* #4 - 현재 IntelliJ를 비록한 JetBrains사의 애플리케이션(Java AWT 애플리케이션)에서 "애월 입력기 + 드보락" 조합으로 사용하면서 애월 입력기 상태에서 한글외 특수문자(,./;'[] 등)을 입력할 때, 드보락 자판 기준의 문자가 입력되는 문제가 있습니다.
 
 ## 감사의 말
 
@@ -55,10 +59,10 @@ Apple OS X에서 영문 드보락(Dvorak) 자판과 함께 쓸 수 있는 한글
 
 ## 라이선스
 
-Copyright (c) 2014, [Daehyun Kim](https://github.com/hatemogi).
+Copyright (c) 2014-2016, [Daehyun Kim](https://github.com/hatemogi).
 All rights reserved.
 
-이 프로젝트는 [BSD 라이선스](https://github.com/hatemogi/AewolInput/blob/master/LICENSE)를 따릅니다. 
+이 프로젝트는 [BSD 라이선스](https://github.com/hatemogi/AewolInput/blob/master/LICENSE)를 따릅니다.
 
 This project is licensed under the terms of the [BSD license](https://github.com/hatemogi/AewolInput/blob/master/LICENSE).
 
