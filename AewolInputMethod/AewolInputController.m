@@ -128,6 +128,13 @@
                 BOOL caps = ((flags & NSAlphaShiftKeyMask) > 0) && isalpha(ascii);
                 ascii = keymaps[shift | caps][keyCode]; // capslock 키반영
 
+                /* 현재 AWT에서 잘되는 입력과 드보락으로 들어가는 입력의 차잇점.
+                 -> 사전에 조립중인 한글이 있었을 때는 OK
+                 -> 사전에 조립중이었을 때와의 차잇점
+                    1) flush할 문자열이 있었다. -> mark된 부분이 있다.
+                    2) *ascii_s가 두 글자 이상이다.
+                 */
+                 
                 NSString *ascii_s = [NSString stringWithFormat:@"%@%c" , [self flushPreeditString:sender], ascii];
                 AWLog(@"sending [%@] (caps=%d) for %ld", ascii_s, caps, keyCode);
                 [sender insertText:ascii_s replacementRange:NSMakeRange(NSNotFound, NSNotFound)];

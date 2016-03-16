@@ -68,6 +68,13 @@
     }];
 }
 
+- (void)testEmptyString {
+    char *ascii = "/";
+    NSString *s = [NSString stringWithFormat: @"%@%c" , @"", *ascii];
+    NSLog(@"s = [%@], %u", s, (unsigned int)[s length]); //, (unsigned)[s length]);
+    XCTAssert(1 == [s length]);
+}
+
 @end
 
 /*
